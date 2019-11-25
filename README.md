@@ -4,4 +4,4 @@ Sometimes you want to be sure that the remote JSON-LD contexts you're loading ar
 
 This module has two interfaces that satisfy the `ld.DocumentLoader` interface from `github.com/piprate/json-gold` - a `HTTPDocumentLoader` that uses the HTTP API interface from `github.com/ipfs/go-ipfs-api`, and a `CoreDocumentLoader` that uses the CoreAPI instance from `github.com/ipfs/interface-go-ipfs-core`, which is what you get passed if you write a [`go-ipfs` plugin](https://github.com/ipfs/go-ipfs/blob/master/docs/plugins.md).
 
-Usage should be fairly straightforward.
+Usage should be fairly straightforward. `raw`, `json`, and `dag-cbor` IPLD formats are supported with `dweb:/ipld/` URIs if you want to be really compact.
