@@ -3,7 +3,6 @@ package loader
 import (
 	"context"
 	"encoding/json"
-	"fmt"
 	"net/url"
 	"strings"
 
@@ -105,7 +104,6 @@ func (dl *DwebDocumentLoader) loadDocumentIPLD(uri string, contextURL string, or
 }
 
 func (dl *DwebDocumentLoader) loadDocumentIPFS(uri string, contextURL string, origin string, remainder string) (*ld.RemoteDocument, error) {
-	fmt.Println("loading document", uri, origin, remainder)
 	c, err := cid.Decode(origin)
 	if err != nil {
 		return nil, err
