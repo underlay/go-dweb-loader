@@ -1,4 +1,4 @@
-package main
+package loader
 
 import (
 	"context"
@@ -13,7 +13,6 @@ import (
 	ipfs "github.com/ipfs/go-ipfs-http-client"
 	options "github.com/ipfs/interface-go-ipfs-core/options"
 	ld "github.com/piprate/json-gold/ld"
-	loader "github.com/underlay/go-dweb-loader/loader"
 )
 
 func TestSecurityExpansion(t *testing.T) {
@@ -59,7 +58,7 @@ func TestSecurityExpansion(t *testing.T) {
 
 	proc := ld.NewJsonLdProcessor()
 	opts := ld.NewJsonLdOptions("")
-	opts.DocumentLoader = loader.NewDwebDocumentLoader(api)
+	opts.DocumentLoader = NewDwebDocumentLoader(api)
 	expanded, err := proc.Expand(doc, opts)
 	if err != nil {
 		t.Fatal(err)
