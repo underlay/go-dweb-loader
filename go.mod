@@ -15,7 +15,7 @@ require (
 	github.com/ipfs/interface-go-ipfs-core v0.3.0
 	github.com/libp2p/go-libp2p-core v0.5.3 // indirect
 	github.com/multiformats/go-multibase v0.0.2 // indirect
-	github.com/piprate/json-gold v0.3.0
+	github.com/piprate/json-gold v0.3.1-0.20200406190636-2eca61206b08
 	github.com/polydawn/refmt v0.0.0-20190807091052-3d65705ee9f1 // indirect
 	github.com/whyrusleeping/cbor-gen v0.0.0-20200504204219-64967432584d // indirect
 	golang.org/x/crypto v0.0.0-20200429183012-4b2356b1ed79 // indirect
