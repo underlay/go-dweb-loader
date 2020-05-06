@@ -12,7 +12,7 @@ require (
 	github.com/ipfs/go-ipld-format v0.2.0 // indirect
 	github.com/ipfs/go-log v1.0.4 // indirect
 	github.com/ipfs/go-merkledag v0.3.2 // indirect
-	github.com/ipfs/interface-go-ipfs-core v0.3.0
+	github.com/ipfs/interface-go-ipfs-core v0.2.7
 	github.com/libp2p/go-libp2p-core v0.5.3 // indirect
 	github.com/multiformats/go-multibase v0.0.2 // indirect
 	github.com/piprate/json-gold v0.3.1-0.20200406190636-2eca61206b08
